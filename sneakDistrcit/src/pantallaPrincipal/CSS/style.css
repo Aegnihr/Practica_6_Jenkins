@@ -1,0 +1,208 @@
+:root {
+    --rosaOscuro : #A16A83 ;
+    --rosaClaro : #F7BFD8;
+    --rojoOscuro : #834548 ; 
+    --grisOscuro : #404040;
+}
+
+.cabeceraColor {
+    background-color: var(--rosaOscuro);
+}
+
+.nombreMarca{
+    font-family: "Irish Grover";
+}
+
+.carritoBoton{
+    background-color: transparent;
+    border: none;
+}
+
+.Categorias {
+    background-color: var(--rosaClaro);  
+    font-family: "Italiana";  
+    font-size: large;
+}
+
+.ordenar_por{
+    background-color: var(--grisOscuro);
+    font-family: "Italiana";  
+    font-size: large;
+    color: white;
+}
+
+#ordenar-button{
+    background-color: transparent;
+    border: none;
+}
+
+.filtro{
+    background-color: var(--rojoOscuro);
+    font-family: "Italiana";  
+    font-size: large;
+    color: white;
+}
+
+.categorias_filtro{
+    color: black;
+    font-family: "Italiana";
+    font-size: large;
+    background-color: var(--rojoOscuro);
+}
+
+#category_buttons{
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+}
+
+#category_buttons:hover{
+    border-bottom: solid 1px var(--grisOscuro) ;
+    transform: scale(1.2);
+}
+
+.sneaker-title{
+    font-family: "Italiana";
+}
+
+.notFound {
+    font-family: "Rubik Glitch";
+    font-size: larger;
+}
+
+.filtroLabel{
+    margin-top: 7px;
+}
+
+#añadir_al_carrito{
+    background-color: var(--rosaClaro);
+    border-radius: 20px;
+    font-family: "Rubik Glitch";
+    transition: 0.5s;
+    padding: 6px;
+}
+
+#añadir_al_carrito:hover{
+    background-color: var(--rosaOscuro);
+    color: white;
+    transform: scale(1.3);
+}
+
+.tablaProductosCarrito {
+    border: none;
+}
+
+#carritoButtons {
+    background-color: var(--rosaClaro);
+    border-radius: 20px;
+    font-family: "Rubik Glitch";
+    transition: 0.5s;
+    padding: 6px;
+    border-color: white;
+    
+}
+
+#carritoButtons:hover{
+    background-color: var(--rosaOscuro);
+    color: white;
+    border-color: black;
+    transform: scale(1.3);
+}
+
+#tituloCarrito {
+    font-family: "Italiana";
+    color: white;
+}
+
+.modal-content {
+    background-color: var(--rosaClaro);
+}
+
+.modal-header{
+    border: none;
+}
+
+.modal-footer{
+    border: none;
+}
+
+#listaCompra tr{
+    border-bottom: solid 1px;
+}
+
+#listaCompra td{
+    margin-top: 7px;
+}
+
+.dropdown-menu {
+    background-color: var(--grisOscuro);
+    border-radius: 20px;
+    font-family: "Irish Grover";
+}
+
+.dropdown-item{
+    color: white;
+    font-size: larger;
+}
+
+#eliminarUnidad{
+    background-color: transparent;
+    border: none;
+    transition: 0.7s;
+    border-radius: 30px;
+}
+
+#eliminarUnidad:hover{
+    background-color: var(--rosaOscuro);
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color: var(--grisOscuro);
+}
+
+.cookies_etc{
+    color: white;
+}
+
+#footerTable{
+    border-left: 4px solid var(--rosaOscuro);
+}
+
+#footerTable td{
+    padding: 20px;
+}
+
+#footerTable th{
+    font-family: "Montserrat";
+    size: larger;
+    color: white;
+}
+
+#REGISTRATE{
+    background-color: var(--rosaClaro);
+    font-family: "Irish Grover";
+    color: black;
+    
+}
+
+.FooterBrand {
+    font-family: "Rubik Glitch";
+    background-color: var(--rosaOscuro);
+    font-size: xx-large;
+}
+
+.lastFooterPart {
+    background-color: var(--rosaOscuro);
+}
+
+#socialMediaButton {
+    background-color: transparent;
+    border: none;
+}
+
+#socialMediaButton:hover{
+
+}
+
+

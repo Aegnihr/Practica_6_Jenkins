@@ -1,0 +1,116 @@
+{
+    "sneakers": [
+        {
+            "nombre": "Nike airforce",
+            "talla": 37,
+            "color": "Blanco",
+            "precio": 160,
+            "marca": "Nike",
+            "tipo": "Basket",
+            "novedades" : "no",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/AirForce-Blancas.webp"
+        },
+        {
+            "nombre": "Nike airforce Skeleton Purple",
+            "talla": 41,
+            "color": "Morado",
+            "precio": 170,
+            "marca": "Nike",
+            "tipo": "Basket",
+            "novedades" : "si",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/airForce-Skeleton.webp"
+        },
+        {
+            "nombre": "Nike airforce",
+            "talla": 42,
+            "color": "Negro",
+            "precio": 300,
+            "marca": "Nike",
+            "tipo": "Basket",
+            "novedades" : "si",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/airForce-Negras.webp"
+        },
+        {
+            "nombre": "Asics Gel-NYC White",
+            "talla": 39,
+            "color": "Blanco",
+            "precio": 250,
+            "marca": "Asics",
+            "tipo": "Montaña",
+            "novedades" : "no",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/ASICSGel-NYCWhiteOysterGrey.webp"
+            
+        },
+        {
+            "nombre": "Asics Gel-NYC Grey",
+            "talla": 40,
+            "color": "Black",
+            "precio": 250,
+            "marca": "Asics",
+            "tipo": "Montaña",
+            "novedades" : "no",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/asics-gel-nyc-ivory-clay-grey.webp"
+            
+        },
+        {
+            "nombre": "Air Jordan 1 'OG'",
+            "talla": 38,
+            "color": "Rojo",
+            "precio": 300,
+            "marca": "Jordan",
+            "tipo": "Basket",
+            "novedades" : "si",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/airJordan-1.webp"
+        },
+        {
+            "nombre": "Air Jordan 1 Fierce Pink",
+            "talla": 38,
+            "color": "Rosa",
+            "precio": 270,
+            "marca": "Jordan",
+            "tipo": "Basket",
+            "novedades" : "si",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/airJordan-Rosas.webp"
+        },
+        {
+            "nombre": "Nike LD Waffle sacai",
+            "talla": 40,
+            "color": "Gris",
+            "precio": 700,
+            "marca": "Nike",
+            "tipo": "Running",
+            "novedades" : "no",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/LD-WAFFLE.jpg"
+        },
+        {
+            "nombre": "New Balance 2002R",
+            "talla": 45,
+            "color": "Gris",
+            "precio": 240,
+            "marca": "New Balance",
+            "tipo": "Running",
+            "novedades" : "si",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/newBalance-2002R.webp"
+        },
+        {
+            "nombre": "Yeezt Boost 350 V2 Light",
+            "talla": 42,
+            "color": "Blanco",
+            "precio": 460,
+            "marca": "Yeezy",
+            "tipo": "Running",
+            "novedades" : "si",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/Yeezy.webp"
+        },
+        {
+            "nombre": "Yeezt Boost 350 V2 Zebra",
+            "talla": 42,
+            "color": "Blanco",
+            "precio": 360,
+            "marca": "Yeezy",
+            "tipo": "Running",
+            "novedades" : "no",
+            "imagen" : "/pantallaPrincipal/IMG/sneakers_img/yeezy-boost-350-v2-zebra.webp"
+        }
+    ]
+}

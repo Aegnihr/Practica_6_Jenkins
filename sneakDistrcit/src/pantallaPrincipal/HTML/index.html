@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Irish+Grover" />
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/1cd1043bb39dbc2ad1fd16d8b92e5fd2?family=Rubik+Glitch" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
+
+    <script src="/Jquery_WebSite_ByAlejandroRodriguez/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/Jquery_WebSite_ByAlejandroRodriguez/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/CSS/style.css">
+
+    <script src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/JQuery/funciones.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid cabeceraColor">
+        <div class="row p-2">
+            <div class="d-flex justify-content-start col-2 col-xxl-2" id="logo">
+                <div class="logo">
+                    <img src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/logo.img"
+                        alt="logo de la marca" width="50">
+                </div>
+            </div>
+            <div class="col-xxl-8 col-md-8 col-6 fs-6 d-flex justify-content-center">
+                <div class="nombreMarca d-none d-xxl-block d-md-block">
+                    <h1>SneakDistrict</h1>
+                </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+            <div class="col-xxl-1 col-md-1 col-3 d-flex justify-content-end" id="carritoCompra">
+                <div class="usuarioDesplegable">
+                    <img src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/usuario.png"
+                        alt="usuarioDesplegable" width="50">
+                </div>
+                <div class="carritoCompra">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="carritoBoton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/carrito-de-compras (1).png"
+                            alt="carrito de la compra" width="50">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex justify-content-center">
+                                    <h1 class="modal-title fs-5" id="tituloCarrito">COMPRALAS, COMPRA, COMPRA, COMPRA
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table id="listaCompra">
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-6 d-flex justify-content-end borrar">
+                                                <button type="button" id="carritoButtons"
+                                                    onclick="borraCarrito()">Borrar</button>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start comprar">
+                                                <button type="button" id="carritoButtons"
+                                                    onclick="comprarCarrito()">Comprar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/bannerPrincipalwebp.webp"
+                    alt="imagen pantalla principal de la tienda" width="1980" height="566">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-4 mx-5">
+            <div class="col-xxl-8 col-md-12 col-12 Categorias d-flex align-items-center">
+                <div class="container-fluid">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-6 col-md-2 col-xxl-2 text-center Novedades">
+                            <button id="category_buttons"
+                                onclick="pintarSneakersNovedades(sneakers_json)">NOVEDADES</button>
+                        </div>
+
+                        <div class="col-6 col-md-2 col-xxl-2 text-center  Running">
+                            <button id="category_buttons" onclick="pintarSneakerRunning(sneakers_json)">RUNNING</button>
+                        </div>
+
+                        <div class="col-6 col-md-2 col-xxl-2 text-center  Basket">
+                            <button id="category_buttons" onclick="pintarSneakerBasket(sneakers_json)">BASKET</button>
+                        </div>
+
+                        <div class="col-6 col-md-2 col-xxl-2 text-center Montaña">
+                            <button id="category_buttons" onclick="pintarSneakerMontaña(sneakers_json)">MONTAÑA</button>
+                        </div>
+
+                        <div class="col-10 col-xxl-3 col-md-3">
+                            <input class="form-control me-2" id="searchInput" type="search" placeholder="Search"
+                                aria-label="Search">
+                        </div>
+
+                        <div class="col-1 col-md-1 col-xxl-1 d-flex justify-content-xxl-end  ">
+                            <button class="btn" type="submit" onclick="buscar()"><img
+                                    src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/lupa.png" alt=""
+                                    width="30px"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xxl-1">
+
+            </div>
+
+
+            <div class="col-xxl-2 col-md-4 p-2 mt-2 d-flex justify-content-xxl-start text-center ordenar_por">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="dropdown-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="ordenar-button">
+                                ORDENAR POR
+                            </button>
+                            <ul class="dropdown-menu">
+                                <button onclick="ordenMayor_a_Menor(sneakers_json)"><a class="dropdown-item"
+                                        href="#">Precio mayor a menor</a></button>
+                                <button onclick="ordenMenor_a_Mayor(sneakers_json)"><a class="dropdown-item"
+                                        href="#">Precio menor a mayor</a></button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-5 d-flex justify-content-around ms-5 sneakers">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row footer">
+            <div class="col-1 mt-5 d-flex justify-content-center align-items-center cookies_etc d-xxl-block d-none">
+                <ul>
+                    <li>Terms and Conditions</li>
+                    <li>Cookies Policy</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-1 col-xxl-3 p-5 d-flex justify-content-start text-center">
+                <table id="footerTable">
+                    <tr>
+                        <td></td>
+                        <th>UNETE A NOSOTROS</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="REGISTRATE" class="p-3">REGISTRATE</button></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <th>PARA OBTENER DESCUENTOS Y VENTAJAS</th>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-8 col-md-10 col-xxl-8 d-flex align-items-center text-center FooterBrand ">
+                <div class="container lastFooterPart">
+                    <div class="row">
+
+                        <h1>SneakDistrict</h1>
+                        <div class="col-4">
+                            <button id="socialMediaButton"><img src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/gorjeo.png" alt=""
+                                width="50px"></button>
+                        </div>
+                        <div class="col-4 ">
+                            <button id="socialMediaButton"><img src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/tik-tok (1).png" alt=""
+                                width="50px"></button>
+                        </div>
+                        <div class="col-4 ">
+                            <button id="socialMediaButton"><img src="/Jquery_WebSite_ByAlejandroRodriguez/pantallaPrincipal/IMG/logotipo-de-instagram.png"
+                                alt="" width="50px"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
